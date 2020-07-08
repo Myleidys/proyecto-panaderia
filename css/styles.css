@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+
+/* Esta es la parte del menu*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.863);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+
+.navbar ul {
+
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    right: 0px;
+    color: rgb(216, 173, 93);
+}
+
+.navbar a:hover {
+    background-color: rgb(194, 165, 3);
+    color: rgb(82, 76, 43);
+
+}
+
+
+/*tamñaño del logo*/
+.navbar img {
+    width: 210px;
+    height: 100px;
+}
+
+/*Esta es la parte del cuadro de opacidad*/
+.texto-imagen {
+    width: 30%;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.383);
+    color: white;
+    position: relative;
+    top: 50px;
+    border-radius: 1em;
+    margin: auto;
+    /*me sirve para que el cuadro me quede centrado*/
+}
+
+
+/*Est es el fondo donde esta posicionado el cuadro de opacidad*/
+.fondo {
+    height: 500px;
+    background-image: url(../imagenes/Bread.jpg);
+    background-size: cover;
+
+}
+
+/*Esta es la parte de la galeria de los productos*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 2em;
+
+}
+
+
+.producto {
+    background-color: rgb(255, 182, 99);
+    border-radius: 1em;
+    min-height: 100px;
+
+}
+
+
+.ejemplo {
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 1em;
+    color: rgb(190, 190, 190);
+}
+
+
+.prod-imagen {
+    overflow: hidden;
+}
+
+.prod-imagen img {
+    display: block;
+    width: 100%;
+}
+
+.galeria-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.galeria-link:hover {
+    color: rgb(211, 154, 47);
+    opacity: 0.6
+}
+
+.galeria-link img {
+    width: auto;
+}
+
+
+/*Est es la parte de los iconos de las redes*/
+.redes {
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+}
+
+
+.redes a img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+/*Est es la parte del Footer*/
+#footer {
+
+
+    background: rgba(0, 0, 0, 0.863);
+    text-align: center;
+    color: rgb(180, 137, 57);
+    position: relative;
+    padding: 1em;
+    height: 30px;
+    left: 0px;
+}
+
+h4 {
+    margin: auto;
+    /*este me sirve para que mi texto me quede centrado en el div*/
+    position: relative;
+    width: 100%;
+}
