@@ -1,117 +1,149 @@
 <!DOCTYPE html>
+
 <html lang="esp">
 
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widt, initial-scale=1.0">
-    <title>SUPER PAN</title>
+    <meta name="vierport" content="width=device-widt, initial-scale=1.0">
 
+    <title>SUPER PAN</title>
     <link rel="icon" type="image/png" href="./imagenes/logo.png">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="estilos/styles.css">
 
 </head>
 
+
 <body>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#"> Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <img src="./imagenes/logo.png" alt="Logo">
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <!-- Esta es la parte del contenedor con el texto flotante-->
+    <header class="main-header">
 
-    <div class="relative-contenedor fondo">
-        <div class="texto-imagen">
-            <h1>QUEREMOS ESTAR CERCA DE TI</h1>
-            <p>En panadería SUPER PAN, queremos que disfrutes del buen sabor de nuestros productos todos los días, por
-                eso te ofrecemos
-                variedad con la mejor calidad y el buen sabor!</p>
+
+
+
+        <nav class="nabvar">
+            <div class="icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <img class="logo" src="./imagenes/logo.png" alt="" />
+            <ul class="menu">
+
+
+
+                <li class="menu-item">
+                    <a class="menu-link active" href="#">Inicio</a>
+                </li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#"> Nosotros</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Productos <i class="fas fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li><a class="menu-link" href="#">Tortas</a></li>
+                        <li><a class="menu-link" href="#">Galleteria</a></li>
+
+                        <li><a class="menu-link" href="#">Postres</a></li>
+
+                    </ul>
+
+
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+    <div id="banner">
+        <div class="ficha">
+            <img src="./imagenes/7.PNG" alt="" />
         </div>
+        <div class="ficha">
+            <img src="./imagenes/829.jpg" alt="" />
+        </div>
+        <div class="ficha">
+            <img src="./imagenes/601.jpg" alt="" />
+        </div>
+        <div class="ficha">
+            <img src="./imagenes/317.jpg" alt="" />
+        </div>
+
     </div>
 
-    <div class="galeria">
-        <div class="producto ejemplo">
-            <a href="#" class="galeria-link">
-                <img style="width: 100%;" src="./imagenes/integral.jpg" alt="integral">
-                <h1>Pan Integral</h1>
-                <p>El Pan Integral esta fabricado especialmente para las personas que no pueden consumir azucar ni
-                    harina de trigo tradicional.</p>
-            </a>
-
-        </div>
-        <div class="producto ejemplo">
-            <a href="#" class="galeria-link">
-                <img style="width: 100%;" src="./imagenes/mexicano.jpg" alt="mexicano">
-                <h1>Concha Mexicana</h1>
-                <p>La concha mexicana es un pan tradicional, que tiene un exquisito sabor.</p>
-            </a>
-        </div>
-
-        <div class="producto ejemplo">
-            <a href="#" class="galeria-link">
-                <img style="width: 100%;" src="./imagenes/croissant.jpg" alt="croissant">
-                <h1>Croissant</h1>
-                <p>El croissant tiene un exquisito sabor de hojaldre el cual tiene un reneno de dulce, especial para
-                    agradar el paladar.</p>
-            </a>
-        </div>
 
 
-        <div class="producto ejemplo">
-            <a href="#" class="galeria-link">
-                <img style="width: 100%;" src="./imagenes/roscon.jpg" alt="roscon">
-                <h1>Roscon</h1>
-                <p>El Roscono el aro ducle, es un pan suave y tienrno un un encatador relleno de dulce.</p>
-            </a>
-        </div>
 
-        <div class="producto ejemplo">
-            <a href="#" class="galeria-link">
-                <img style="width: 100%;" src="./imagenes/baguette.jpg" alt="baguette">
-                <h1>Baguette</h1>
-                <p>El baguette es un exquisito pan tradicional especialmente para desayunar.</p>
-            </a>
 
-        </div>
 
-        <div class="producto ejemplo">
-            <a href="#" class="galeria-link">
-                <img style="width: 100%;" src="./imagenes/nueces.jpg" alt="nueces">
-                <h1>Pan de Nueces</h1>
-                <p>El Pan de Nueces, es un pan con un encatador dulce que lo hace diferentes a lso demas por su sabro.
-                </p>
-            </a>
-        </div>
-    </div>
 
-    <!-- Esta es la parte de los iconos de las redes-->
 
-    <div class="redes">
-        <a class="iconos" href="#">
-            <img src="./imagenes/whatsapp.png" alt="whatsapp">
-        </a>
 
-        <a class="iconos" href="#">
-            <img src="./imagenes/pinterest.png" alt="pinterest">
-        </a>
-        <a class="iconos" href="#">
-            <img src="./imagenes/facebook.png" alt="facebook">
-        </a>
-    </div>
 
-    <!-- Esta es la parte del Footer-->
+    <main>
+        <section class="cards">
+
+
+            <div class="card">
+                <img class="card-img" src=" ./imagenes/1.PNG" alt='torta'>
+                <div class="card-content">
+                    <h3 class="uno">Torta Choco Arequipe Blanca</h3>
+                    <p>Suave torta de chocolate con una capa de arequipe y cubierta con deliciosos hojuiela de chocolate
+                        blanco</p>
+                    <a class="detalle" href="#">Más Detalle</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img" src=" ./imagenes/3.PNG" alt='torta'>
+                <div class="card-content">
+                    <h3 class="uno"> Torta Tres Leches Maracuya</h3>
+                    <p>Torta blanca remojada en nuestra deliciosa mezcla de tres leches, cubierta en crema de leche o
+                        vainilla con salsa de maracuya</p>
+                    <a class="detalle" href="#">Más Detalle</a>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <img class="card-img" src=" ./imagenes/2.PNG" alt='torta'>
+                <div class="card-content">
+                    <h3 class="uno">Torta Marquesa</h3>
+                    <p>Nuestra suave tora negra, con una capa intremedia de crema de vainilla con dulce de mora y
+                        cubierta con crema de chocolate</p>
+                    <a class="detalle" href="#">Más Detalle</a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+
     <footer>
-        <div id="footer">
-            <h4>COPYRIGHT © 2020 PÁGINA WEB BOGOTÁ - COLOMBIA</h4>
+        <div class="footer">
+            Copyright © 2020 Todos los derechos reservados - Pasteleria SUPER PAN
+            <br>
+            Bogotá - Colombia
         </div>
     </footer>
 
+
+
 </body>
+
 
 </html>
