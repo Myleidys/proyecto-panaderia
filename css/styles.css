@@ -1,151 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
 
-/* Esta es la parte del menu*/
-.navbar {
-    background-color: rgba(0, 0, 0, 0.863);
-    position: sticky;
-    top: 0;
-    z-index: 1;
+/**************************  menu ************************* */
+.main-header {
+    background-color: rgb(32, 32, 32);
+    color: #C20054;
     display: flex;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;*/
 }
 
-.navbar ul {
+.icon {
+    padding: 10px;
+    color: #C20054;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
 
-    padding: 0;
+
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nabvar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.icon:active {
+    background-color: #cf3c00;
+}
+
+.menu {
     list-style: none;
+
+
     display: flex;
+
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: auto
 }
 
-.navbar a {
+.menu-item {
+    position: relative;
+}
+
+
+.submenu {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.822);
+    overflow: hidden;
+    max-height: 0px;
+    transition: 200ms
+}
+
+.menu-item:hover>.submenu {
+    max-height: 200px;
+
+}
+
+.menu-link {
     display: block;
     padding: 1em;
+
+
     text-decoration: none;
-    right: 0px;
-    color: rgb(216, 173, 93);
-}
-
-.navbar a:hover {
-    background-color: rgb(194, 165, 3);
-    color: rgb(82, 76, 43);
-
+    color: #c5c5c5;
 }
 
 
-/*tamñaño del logo*/
-.navbar img {
+.menu-link:hover {
+    background-color: #05050571;
+    color: #c5c5c5;
+}
+
+
+
+.active {
+    font-weight: bold;
+    color: #c5c5c5;
+}
+
+
+.detalle {
+    text-decoration: none;
+    color: #c5c5c5;
+
+}
+
+
+
+.nabvar img {
     width: 210px;
     height: 100px;
 }
 
-/*Esta es la parte del cuadro de opacidad*/
-.texto-imagen {
-    width: 30%;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.383);
-    color: white;
-    position: relative;
-    top: 50px;
-    border-radius: 1em;
-    margin: auto;
-    /*me sirve para que el cuadro me quede centrado*/
-}
+/* *************************  banner ************************* */
 
 
-/*Est es el fondo donde esta posicionado el cuadro de opacidad*/
-.fondo {
+#banner {
+    background: #fff;
+    width: 600px;
     height: 500px;
-    background-image: url(../imagenes/Bread.jpg);
-    background-size: cover;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+
+#banner .ficha {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    border-left: 10px solid #fff;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+    transform: skewX(-20deg);
+    transition: width 1.2s ease-in-out;
+}
+
+#banner:hover div {
+    width: 108px;
+    cursor: w-resize;
+}
+
+#banner:hover div:hover {
+    width: 392px;
+}
+
+.ficha img {
+    margin-left: -55px;
+    transform: skewX(20deg);
+
+
+    width: 650px;
+    height: 550px;
 
 }
 
-/*Esta es la parte de la galeria de los productos*/
+#banner>div:first-child {
+    margin-left: -63px;
+}
 
-.galeria {
+#banner>div:last-child {
+    margin-right: -63px;
+}
+
+
+
+/* *************************  cartas ************************* */
+
+
+
+.cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    padding: 2em;
+    gap: 20px;
+    padding: 3em;
+
+
+    outline: 10px dashed #d7fa2a;
+    box-shadow: 0 0 0 10px #C20054;
+    animation: 1s animateBorderOne ease infinite;
+
+
+    background-color: #fff;
+    transition: all .3s;
+
 
 }
 
 
-.producto {
-    background-color: rgb(255, 182, 99);
-    border-radius: 1em;
-    min-height: 100px;
-
+@keyframes animateBorderOne {
+    to {
+        outline-color: #d815ff;
+        box-shadow: 0 0 0 10px #00d3b7;
+    }
 }
 
 
-.ejemplo {
-    background-color: rgba(0, 0, 0, 0.911);
-    padding: 1em;
-    color: rgb(190, 190, 190);
-}
 
 
-.prod-imagen {
+
+.card {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px gray;
     overflow: hidden;
+    box-shadow: 0 0 40px #76078c;
+
+
 }
 
-.prod-imagen img {
+
+
+
+
+
+.card-img {
     display: block;
     width: 100%;
-}
-
-.galeria-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.galeria-link:hover {
-    color: rgb(211, 154, 47);
-    opacity: 0.6
-}
-
-.galeria-link img {
-    width: auto;
+    height: 200px;
+    object-fit: cover;
+    background-color: #000;
 }
 
 
-/*Est es la parte de los iconos de las redes*/
-.redes {
-    position: fixed;
-    bottom: 110px;
-    right: 20px;
-}
 
 
-.redes a img {
-    width: 50px;
-    height: 50px;
-    display: block;
-}
-
-/*Est es la parte del Footer*/
-#footer {
-
-
-    background: rgba(0, 0, 0, 0.863);
-    text-align: center;
-    color: rgb(180, 137, 57);
-    position: relative;
+.card-content {
     padding: 1em;
-    height: 30px;
-    left: 0px;
+
+
 }
 
-h4 {
-    margin: auto;
-    /*este me sirve para que mi texto me quede centrado en el div*/
-    position: relative;
-    width: 100%;
+
+.uno {
+    color: #00d3b7;
+    text-shadow: 0 0 20px #0300ca;
+    text-align: center;
+
+    animation: resplandor .5s infinite alternate;
+
+}
+
+
+
+@keyframes resplandor {
+    to {
+        text-shadow: 0 0 10px #ffed17;
+    }
+}
+
+
+
+
+
+
+/* ************************* footer ************************* */
+
+
+.footer {
+    background-color: rgb(32, 32, 32);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c5c5c5;
+    font-size: 1em;
+    text-align: center;
+
 }
